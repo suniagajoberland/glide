@@ -62,26 +62,81 @@ p {
   justify-content: center;
 }
 
+.btn button {
+  margin: 0 5px;
+}
+
 button {
+  font-weight: bold;
+  font-size: 1.2rem;
   padding: 10px 20px;
   border-radius: 50px;
-  letter-spacing: 1.5px;
-  text-decoration: none;
   cursor: pointer;
 }
 
 .build {
-  background-color: rgb(47, 233, 233);
+  background-color: #18bed4;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 50px;
 }
 
 .build a {
+  color: white;
+}
+
+button > a {
   text-decoration: none;
-  color: azure;
 }
 
 .video {
-  height: 100%;
   padding: 20px 0;
+  height: 100%;
+}
+
+.servicio-container {
+  padding: 120px 0px;
+}
+
+.servicio h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.servicio-container {
+  display: grid;
+  grid-template-areas:
+    "primer-s primer-s segundo-s"
+    "servicio servicio servicio"
+    "tercero-s tercero-s tercero-s";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto auto 1fr auto;
+}
+
+.primer-s {
+  grid-area: primer-s;
+}
+
+.servicio {
+  grid-area: servicio;
+  text-align: center;
+  color: #7c7c86;
+}
+
+.segundo-s {
+  grid-area: segundo-s;
+  text-align: center;
+}
+
+.tercero-s {
+  grid-area: tercero-s;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.btn-s {
+  background-color: white;
+  margin: 10px 100px;
+  border-radius: 20px;
 }

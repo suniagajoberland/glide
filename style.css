@@ -3,8 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
 }
 
 .global {
@@ -28,10 +26,6 @@
 .logo a {
   text-decoration: none;
   color: black;
-}
-
-img {
-  width: 130px;
 }
 
 .navbar {
@@ -173,4 +167,25 @@ button > a {
 
 .movimiento img {
   height: 70px;
+}
+
+.info {
+  padding: 96px 20px;
+}
+
+.info h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  padding: 10px;
+}
+
+.info button {
+  background-color: black;
+  padding: 10px;
+}
+
+.info a {
+  text-decoration: none;
+  color: white;
+  border-radius: 40px;
 }
